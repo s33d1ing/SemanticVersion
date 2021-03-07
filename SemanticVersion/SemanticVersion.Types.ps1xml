@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Types>
+  <Type>
+    <Name>System.Version#IncludeLabel</Name>
+    <Members>
+      <ScriptMethod>
+        <Name>ToString</Name>
+        <Script>
+          $version = $this.Major, $this.Minor, $this.Build -join '.'
+
+          if (-not [string]::IsNullOrWhiteSpace($this.PSSemVerPreReleaseLabel)) {
+            $version = $version, $this.PSSemVerPreReleaseLabel -join '-'
+          }
+
+          if (-not [string]::IsNullOrWhiteSpace($this.PSSemVerBuildLabel)) {
+            $version = $version, $this.PSSemVerBuildLabel -join '+'
+          }
+
+          $version
+        </Script>
+      </ScriptMethod>
+    </Members>
+  </Type>
+</Types>
