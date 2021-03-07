@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <ViewDefinitions>
+    <View>
+      <Name>ViewsOf_Semantic_Version_With_Label</Name>
+      <ViewSelectedBy>
+        <TypeName>SemanticVersion</TypeName>
+      </ViewSelectedBy>
+
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>Major</Label>
+            <Width>5</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Minor</Label>
+            <Width>5</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Patch</Label>
+            <Width>5</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Prerelease</Label>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Metadata</Label>
+            <Width>20</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+
+        <TableRowEntries>
+          <TableRowEntry>
+            <!-- <Wrap/> -->
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Major</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Minor</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Patch</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>PreReleaseLabel</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>BuildLabel</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+
+      </TableControl>
+    </View>
+
+    <View>
+      <Name>ViewsOf_System_Version_With_Label</Name>
+      <ViewSelectedBy>
+        <TypeName>System.Version#IncludeLabel</TypeName>
+      </ViewSelectedBy>
+
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>Major</Label>
+            <Width>5</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Minor</Label>
+            <Width>5</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Build</Label>
+            <Width>5</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Revision</Label>
+            <Width>10</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Prerelease</Label>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Metadata</Label>
+            <Width>20</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+
+        <TableRowEntries>
+          <TableRowEntry>
+            <!-- <Wrap/> -->
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Major</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Minor</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Build</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Revision</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>PSSemVerPreReleaseLabel</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>PSSemVerBuildLabel</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+
+      </TableControl>
+    </View>
+  </ViewDefinitions>
+</Configuration>
